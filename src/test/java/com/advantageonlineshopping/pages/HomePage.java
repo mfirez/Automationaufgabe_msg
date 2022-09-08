@@ -12,8 +12,6 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "//a[@class='ng-scope']")
     public WebElement homePage_loc;
 
-    //@FindBy(xpath = "(//*[@id='menuSearch'])[1]")
-    //public WebElement searchButton_loc;
 
     @FindBy(xpath = "//a//*[@id=\"menuSearch\"]")
     public WebElement searchButton_loc;

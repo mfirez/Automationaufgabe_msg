@@ -106,7 +106,7 @@ public class OrderLaptopStepDefs extends BasePage {
     @Given("the user should be create a account with valid credential")
     public void the_user_should_be_create_a_account_with_valid_credential() {
 
-        registerPage.userNameRegister_loc.sendKeys(faker.name().lastName());
+        registerPage.userNameRegister_loc.sendKeys(faker.internet().password(5,13));
         registerPage.emailRegister_loc.sendKeys(faker.internet().emailAddress());
         registerPage.passwordRegister_loc.sendKeys("Mehmet_1903");
         registerPage.confirmPasswordRegister_loc.sendKeys("Mehmet_1903");
@@ -123,7 +123,7 @@ public class OrderLaptopStepDefs extends BasePage {
 
         registerPage.cityRegister_loc.sendKeys(faker.address().city());
         registerPage.addressRegister_loc.sendKeys(faker.address().streetAddress());
-        registerPage.regionRegister_loc.sendKeys(faker.address().state());
+        registerPage.regionRegister_loc.sendKeys("Bonlanden");
         registerPage.postalCodeRegister_loc.sendKeys(faker.address().zipCode());
 
         BrowserUtils.clickWithJS(registerPage.agreeUseRegister_loc);

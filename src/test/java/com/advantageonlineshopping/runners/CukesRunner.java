@@ -9,12 +9,11 @@ import org.junit.runner.RunWith;
 
         plugin = {"json:target/cucumber.json",
                 "html:target/default-html-reports",
-                "de.monochromata.cucumber.report.PrettyReports:target/cucumber",
-                "rerun:target/rerun.txt"},
+                "de.monochromata.cucumber.report.PrettyReports:target/cucumber"},
         features = "src/test/resources/features",
         glue = "com/advantageonlineshopping/step_definitions",
         dryRun = false,
-        tags = "@wip"
+        tags = "@msg"
 
 
 )

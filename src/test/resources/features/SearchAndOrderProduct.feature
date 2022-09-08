@@ -16,14 +16,14 @@ Feature:As a user , I should be able to search and order product
   Background:
     Given the user is on the home page
 
-  @wip
+  @msg
   Scenario: Navigate to Product
     And the user click to the search button
     When the user enters product name "HP Z3200 WIRELESS MOUSE"
     And the user click product
     Then the user should be able to see the product "HP Z3200 WIRELESS MOUSE"
 
-  @wip
+  @msg
   Scenario: Order Laptop and pay
     When the user navigate to "laptops"
     And the user selected the color GRAY
